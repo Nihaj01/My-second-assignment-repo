@@ -260,8 +260,34 @@ background-image: url(../assets/deal-zabo.png);
 }
 
 
+/* for join part */
+.join{
+    margin-top: 120px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-image: url(../assets/news-letter-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 530px;
 
-
+}
+.join-title{
+    font-weight: 800;
+    font-size: 3rem;
+    color: white;
+}
+.join-email{
+    border: none;
+    height: 48px;
+    width: 644px;
+    margin-right: 0;
+}
+.join-btn{
+    height: px;
+    width: 188px;
+    margin-left: 0;
+}
 
 
 
@@ -313,6 +339,14 @@ nav,.fresh,.plants{
     .offer-half2{
         width: 367px;
    height: 423px;
+    }
+
+    .join{
+        width: 100%;
+    }
+    .join-email{
+        height: 48px;
+    width: 244px;
     }
     
 }
