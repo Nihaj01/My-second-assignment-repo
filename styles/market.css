@@ -253,7 +253,7 @@ background-image: url(../assets/deal-zabo.png);
     border-radius: 15px;
 }
 
-.offer-percentage,.shop{
+.offer-percentage,.offer-shop{
     font-size: 2rem;
     font-weight: 800;
     color: white;
@@ -296,6 +296,7 @@ footer{
     padding-left: 160px;
     padding-right: 160px;
     gap: 100px;
+    margin: 0 150px;
 }
 .footer-links{
     display: flex;
@@ -308,13 +309,16 @@ footer{
 }
 .footer-social{
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 .footer-column a{
     text-decoration: none;
+    color: #000000;
+    width: 180px;
 }
 
-/* Responsive for mobile deveice */
+
+/* Responsive for mobile device */
 @media screen and (max-width:576px) {
 nav,.fresh,.plants{
     margin: auto;
@@ -354,14 +358,20 @@ nav,.fresh,.plants{
         flex-direction: column;
         margin-top: 41px;  
     } 
+    .trusted-img{
+        margin-right: 0;
+    }
 
     .offers{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        margin: 0 80px;
+      
     }
     .offer-half2{
-        width: 367px;
-   height: 423px;
+        margin-top: 0px;
+        width: 376px;
+        height: 206px;
     }
 
     .join{
@@ -370,6 +380,19 @@ nav,.fresh,.plants{
     .join-email{
         height: 48px;
     width: 244px;
+    }
+
+    footer,.footer-links{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 0;
+        margin-left: 0px;
+        margin-right: 0px;
+        gap: 60px;
+    }
+    .footer-column{
+        margin-bottom: 0px;
+        gap: 60px;
     }
     
 }
