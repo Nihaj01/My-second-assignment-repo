@@ -124,7 +124,7 @@ text-decoration: none;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     row-gap: 30px;
-    gap: 10px;
+    gap: 20px;
 }
 .plant-items{
     display: flex;
@@ -138,12 +138,59 @@ text-decoration: none;
 .plant-title{
     font-size: 3rem;
     font-weight: 800;
+    margin-bottom: 0;
 }
 .plant-description{
     font-weight: 400;
     font-size: 1.25rem;
 }
+/* For Trusted Seller Section */
+.trusted-seller{
+    display: flex;
+    margin: 0 150px;
+    margin-top: 210px;
+    gap: 60px;
+}
+.trusted-logo{
+    height: 286px;
+    width: 286px;
+    margin-left: -200px;
+    margin-top: -150px;
+}
+.trusted-img{
+    width: 540px;
+    height: 597px;
+}
+.plants-lover{
+    width: 540px;
+    height: 521px;
+}
+.plants-lover-title{
+    font-weight: 800;
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.about-store{
+    margin-bottom: 10px;
+    font-size: a.5rem;
+    font-weight: 500;
+}
 
+/* for deals section */
+.deals{
+    text-align: center;
+    align-items: center;
+    margin: 120px 150px;
+}
+.deal-title{
+    font-size: 4rem;
+    font-weight: 800;
+}
+.deal-description{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
 /* Responsive for mobile deveice */
 @media screen and (max-width:576px) {
@@ -153,7 +200,8 @@ nav,.fresh,.plants{
 
   .home,
   .shop,
-  .about {
+  .about 
+  {
     display: none;
   }
   .cart{
@@ -174,6 +222,15 @@ nav,.fresh,.plants{
         margin-right: 17px;
         gap: 10px;
     }
+    .trusted-logo{
+        display: none;
+    }
+    .trusted-seller{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        margin-top: 41px;  
+    } 
     
-
 }
