@@ -43,6 +43,15 @@ color: #111111;
     border: none;
     font-weight: 700;
 }
+.btn-shop{
+    background-color: transparent;
+    color: white;
+    width: 270px;
+    height: 50px;
+    border: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
 .plant-name{
     font-weight: 600;
     font-size: 1.5rem; 
@@ -191,6 +200,70 @@ text-decoration: none;
     font-size: 1.5rem;
     font-weight: 500;
 }
+/* for coffers or challenge part */
+.offers{
+    display: flex;
+    gap: 60px;
+    margin: 0 150px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.first-offer{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-image: url(../assets/deal-bloom.png);
+    background-repeat: no-repeat;
+   border-radius: 15px;
+   
+}
+.second-offer{
+    
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-image: url(../assets/deal-ana.png);
+    background-repeat: no-repeat;
+   border-radius: 15px;
+    
+}
+/* .third-offer{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    
+} */
+.offer-half1{
+   
+    display: grid;
+   grid-template-columns: repeat(1,1fr);
+   width: 367px;
+   height: 423px;
+   row-gap: 20px;
+}
+.offer-half2{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+background-image: url(../assets/deal-zabo.png);
+    width: 750px;
+     height: 423px;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.offer-percentage,.shop{
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+}
+
+
+
+
+
+
 
 /* Responsive for mobile deveice */
 @media screen and (max-width:576px) {
@@ -232,5 +305,14 @@ nav,.fresh,.plants{
         flex-direction: column;
         margin-top: 41px;  
     } 
+
+    .offers{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .offer-half2{
+        width: 367px;
+   height: 423px;
+    }
     
 }
