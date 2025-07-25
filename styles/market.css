@@ -35,6 +35,28 @@
 color: #111111;
 }
 
+.btn-primary{
+    background-color: #E95A08;
+    color: white;
+    width: 270px;
+    height: 50px;
+    border: none;
+    font-weight: 700;
+}
+.plant-name{
+    font-weight: 600;
+    font-size: 1.5rem; 
+    margin-bottom: 0;
+    margin-top: 30px;
+
+}
+.plant-price{
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
 
 /* Styles for navbar */
 nav{
@@ -68,10 +90,64 @@ text-decoration: none;
     color:  #000000;
 }
 
+/* Styles for Fresh Flowers Section */
+.fresh{
+    display: flex;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 137px;
+    margin-top: 103px;
+}
+.fresh-title{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+.fresh-para{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+.fresh-img{
+    width: 570px;
+    height: 355px;
+}
+
+/* Styles for Our plants Section */
+.plants{
+    text-align: center;
+    margin: 0 150px;
+    
+   
+}
+.plant-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 30px;
+    gap: 10px;
+}
+.plant-items{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: 485px;
+    width: 270px;;
+}
+.plant-title{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.plant-description{
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
 
 /* Responsive for mobile deveice */
 @media screen and (max-width:576px) {
-nav{
+nav,.fresh,.plants{
     margin: auto;
 }
 
@@ -83,5 +159,21 @@ nav{
   .cart{
         display: inline-block;
     }
+
+    .fresh{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .fresh-img{
+        width: 100%;
+    }
+    .plant-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 14px;
+        margin-right: 17px;
+        gap: 10px;
+    }
+    
 
 }
