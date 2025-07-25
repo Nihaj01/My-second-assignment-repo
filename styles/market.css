@@ -288,8 +288,31 @@ background-image: url(../assets/deal-zabo.png);
     width: 188px;
     margin-left: 0;
 }
-
-
+/* footer */
+footer{
+    display: flex;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 160px;
+    padding-right: 160px;
+    gap: 100px;
+}
+.footer-links{
+    display: flex;
+    gap: 150px;
+}
+.footer-column{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+}
+.footer-social{
+    display: flex;
+    gap: 50px;
+}
+.footer-column a{
+    text-decoration: none;
+}
 
 /* Responsive for mobile deveice */
 @media screen and (max-width:576px) {
