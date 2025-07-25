@@ -1,0 +1,87 @@
+ /* shared-fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+ /* For Titles  */
+.noto-serif-title{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/*For paragraph */
+
+
+.inter-para {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Shared-colors */
+.h-color1{
+    color: #E95A08;
+}
+.h-color2{
+   color:  #000000;
+}
+.para-color{
+    color: #000000;
+    opacity: 50%;
+}
+.subtitle-color{
+color: #111111;
+}
+
+
+/* Styles for navbar */
+nav{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    margin: 30px 150px;
+    
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+ margin-left: 48px;
+ 
+}
+nav ul li a{
+text-decoration: none;
+}
+.logo{
+    width: 135px;
+    height: 82px;
+}
+.home{
+    font-size:1rem;
+    font-weight: 800;
+    color:  #000000;
+}
+.cart{
+    color:  #000000;
+}
+
+
+/* Responsive for mobile deveice */
+@media screen and (max-width:576px) {
+nav{
+    margin: auto;
+}
+
+  .home,
+  .shop,
+  .about {
+    display: none;
+  }
+  .cart{
+        display: inline-block;
+    }
+
+}
